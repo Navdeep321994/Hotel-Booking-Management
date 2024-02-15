@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Where every stay feels like home"
+    />
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <style>
+      * {
+  
+        margin: 0;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>So Many Mornings</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+ 
+  <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script>
+  
+$(window).scroll(function() {
+
+if ($(window).scrollTop() > 50) {
+    $('.main_h').addClass('sticky');
+    $('.myname').removeClass('white-text');
+    $('.myname').addClass('dark-text');
+    $("nav ul a").css('color', '#231f1f');
+    $(".dropbtn").css('color', '#231f1f');
+    $("#dropdown-arrow").attr('src', './ic_arrow_drop_down_black_48px.svg');
+    $(".mobile-toggle span").css('background', '#231f1f');
+    $(".dropdown-content").css('background', '#eee');
+} else {
+    $('.main_h').removeClass('sticky');
+    $('.myname').addClass('white-text');
+    $('.myname').removeClass('dark-text');
+    $("nav ul a").css('color', '#fff');
+    $(".dropbtn").css('color', '#fff');
+    $("#dropdown-arrow").attr('src', './ic_arrow_drop_down_white_48px.svg');
+    $(".mobile-toggle span").css('background', '#fff');
+    $(".dropdown-content").css('background', '#231f1f');
+}
+
+if ( ($(window).scrollTop() > 200) && ($(window).width() < 414) ) {
+  $(".contact").removeClass('slideDown');
+  $(".contact").addClass('slideUp');
+}
+
+if ( ($(window).scrollTop() < 100) && ($(window).width() < 414) ) {
+  $(".contact").removeClass('slideUp');
+  $(".contact").addClass('slideDown');
+}
+
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+
+});
+
+// sidenav slide in/out
+$('.mobile-toggle').click(
+function() {
+  if ($('.main_h').hasClass('close')) {
+      $('.main_h').removeClass('close');
+  } else {
+      $('.main_h').addClass('close');
+  }
+$("#ol").addClass("overlay");
+$(".sidenav").removeClass("slideOut");
+$(".sidenav").addClass("slideIn");
+})
+
+$('#ol').click(
+function(){
+$(".sidenav").removeClass("slideIn");
+$(".sidenav").addClass("slideOut");
+$("#ol").removeClass("overlay");
+if ($('.main_h').hasClass('close')) {
+    $('.main_h').removeClass('close');
+} else {
+    $('.main_h').addClass('open-nav');
+}
+})
+
+// navigation scroll
+$('nav a').click(function(event) {
+var id = $(this).attr("href");
+var offset = 70;
+var target = $(id).offset().top - offset;
+$('html, body').animate({
+    scrollTop: target
+}, 500);
+event.preventDefault();
+});
+
+ </script>
+  </body>
+</html>

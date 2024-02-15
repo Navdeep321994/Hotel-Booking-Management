@@ -1,0 +1,85 @@
+/* Register.css */
+.regis input[type="email"] {
+  width: 100% ;
+  height: 19px;
+  text-align: left ;
+  font-size: 14px ;
+}
+/* .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 90vw;
+  height: 110vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+} */
+.fwOyDH {
+	margin-top: 5% !important;
+	width: 25%;
+}
+.sc-gsTDqH.fRoqiC {
+  margin-top: 20%;
+  width: 25%;
+}
+
+
+.regis form {
+  display: grid;
+  gap: 15px;
+}
+
+.regis input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.rButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; 
+  margin-top: 10px;
+}
+
+
+.rContainer {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rInput{
+  height: 30px;
+  padding: 10px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.register {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Additional styling for form fields, error messages, etc. can be added here */

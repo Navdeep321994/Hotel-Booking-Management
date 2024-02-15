@@ -1,0 +1,43 @@
+/* Add this CSS in your component or import it from a separate CSS file */
+h3.listContainerhd {
+  margin-top: 35px;
+  margin-left: 44px;
+  margin-bottom: -50px;
+  width: 100%;
+    font-size: 24px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+.listContainer {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    background-color: #C49368;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  

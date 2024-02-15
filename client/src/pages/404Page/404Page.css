@@ -1,0 +1,37 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fbf6f2;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ee885c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-link:hover {
+    background-color: #fff;
+    color: #ee885c;
+    border: 1px solid #ee885c;;
+  }
+  

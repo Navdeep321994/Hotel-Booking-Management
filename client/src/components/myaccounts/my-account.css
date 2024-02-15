@@ -1,0 +1,30 @@
+
+.nav a.active.show {
+    width: 177px;
+    text-decoration: none;
+    margin-left: 15%;
+}
+.nav a.active.show1 {
+    width: 182px;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+.react-responsive-modal-container {
+    width: 50%;
+    border-style: solid;
+    border-color: #efeee8;
+    margin-top: -106px;
+    margin-left: 270px;
+    position: absolute;
+}
+button.react-responsive-modal-closeButton svg{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.react-responsive-modal-modal {
+    background-color: #efeee8;
+}
