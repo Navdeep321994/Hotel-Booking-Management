@@ -44,7 +44,7 @@
     "eject": "react-scripts eject"
   },
   "devServer": {
-    "allowedHosts": "localhost"
+    "allowedHosts": "somanymornings.com"
   },
   "eslintConfig": {
     "extends": [
