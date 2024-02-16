@@ -83,8 +83,10 @@ export const requestPasswordReset = async (req, res, next) => {
       secreConnection:  false,
  // Set to true if your email provider requires a secure connection (e.g., Gmail)
       auth: {
-        user: "navdeepsinghsiliconindia@gmail.com",
-        pass: "qqzv nslp mopy rugi",
+        // user: "navdeepsinghsiliconindia@gmail.com",
+        // pass: "qqzv nslp mopy rugi",
+        user: "somanymornings@gmail.com",
+        pass: "ampb yaxf fgmi gjri",
       },
     });
 
